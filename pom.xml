@@ -8,11 +8,54 @@
 		<version>2.7.9</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.fushioncoder</groupId>
-	<artifactId>Utility_Service</artifactId>
+
+<!--	Requirements setup	-->
+	<groupId>io.github.fushioncode</groupId>
+	<artifactId>utilities</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Utility_Service</name>
-	<description>Utility service set up for various utility operation</description>
+	<packaging>jar</packaging>
+	<name>utilities java</name>
+	<description>Sample library to publish artifact to central repository. Contains various java utility operation</description>
+	<url>https://github.com/fushioncode/utilities</url>
+
+<!--	declare license being used/set up in the application-->
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+<!--	Developer information	-->
+	<developers>
+		<developer>
+			<name>Matthew Adesina</name>
+			<email>matthew.feranmi@outlook.com</email>
+			<organization>io.github.fushioncode</organization>
+			<organizationUrl>https://github.com/fushioncode</organizationUrl>
+		</developer>
+	</developers>
+
+<!--	Source control management	-->
+	<scm>
+		<connection>scm:git:git//github.com/fushioncode/utilities.git</connection>
+		<developerConnection>scm:git:ssh://github.com:fushioncode/utilities.git</developerConnection>
+		<url>https://github.com/fushioncode/utilities/tree/main</url>
+	</scm>
+
+<!--	Distribution management		-->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -35,6 +78,11 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-text</artifactId>
+			<version>1.9</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -62,7 +110,74 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.13</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.5.0</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
+
 	</build>
 
 </project>

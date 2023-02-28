@@ -1,4 +1,4 @@
-package com.fushioncoder.Utility_Service.utilities;
+package io.github.fushioncode.utilities.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

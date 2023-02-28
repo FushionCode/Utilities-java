@@ -1,4 +1,4 @@
-package com.fushioncoder.Utility_Service.utilities;
+package io.github.fushioncode.utilities.utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.text.CaseUtils;

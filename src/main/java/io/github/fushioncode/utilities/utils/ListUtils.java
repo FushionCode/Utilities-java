@@ -1,4 +1,4 @@
-package com.fushioncoder.Utility_Service.utilities;
+package io.github.fushioncode.utilities.utils;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,4 +1,4 @@
-package com.fushioncoder.Utility_Service;
+package io.github.fushioncode.utilities;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
