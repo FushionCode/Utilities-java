@@ -10,13 +10,13 @@
 	</parent>
 
 <!--	Requirements setup	-->
-	<groupId>io.github.fushioncode</groupId>
-	<artifactId>utilities</artifactId>
-	<version>1.0.3</version>
+	<groupId>io.bitbucket.vfddevteam</groupId>
+	<artifactId>TestDeployment</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>utilities java</name>
-	<description>Sample library to publish artifact to central repository. Contains various java utility operation</description>
-	<url>https://github.com/fushioncode/utilities</url>
+	<name>Test Artifact Deployment</name>
+	<description>Test java Artifact deployment</description>
+	<url>https://bitbucket.org/vfddevteam/testdeployment</url>
 
 <!--	declare license being used/set up in the application	-->
 	<licenses>
@@ -31,16 +31,19 @@
 		<developer>
 			<name>Matthew Adesina</name>
 			<email>matthew.feranmi@outlook.com</email>
-			<organization>io.github.fushioncode</organization>
-			<organizationUrl>https://github.com/fushioncode</organizationUrl>
+			<organization>io.bitbucket.vfddevteam</organization>
+			<organizationUrl>https://bitbuckect.org/vfddevteam</organizationUrl>
 		</developer>
 	</developers>
 
 <!--	Source control management	-->
 	<scm>
-		<connection>scm:git:git//github.com/fushioncode/utilities.git</connection>
-		<developerConnection>scm:git:ssh://github.com:fushioncode/utilities.git</developerConnection>
-		<url>https://github.com/fushioncode/utilities/tree/main</url>
+<!--		<connection>scm:git:git//github.com/fushioncode/utilities.git</connection>-->
+<!--		<developerConnection>scm:git:ssh://github.com:fushioncode/utilities.git</developerConnection>-->
+<!--		<url>https://github.com/fushioncode/utilities/tree/main</url>-->
+		<connection>scm:git:git://bitbucket.org/vfddevteam/testdeployment.git</connection>
+		<developerConnection>scm:git:ssh://bitbucket.org:vfddevteam/testdeployment.git</developerConnection>
+		<url>https://bitbucket.org/vfddevteam/testdeployment/src</url>
 	</scm>
 
 <!--	Distribution management		-->
@@ -82,16 +85,6 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-text</artifactId>
 			<version>1.9</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.imgscalr</groupId>
-			<artifactId>imgscalr-lib</artifactId>
-			<version>4.2</version>
 		</dependency>
 	</dependencies>
 
