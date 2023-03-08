@@ -11,6 +11,9 @@ import java.util.HashMap;
 import java.util.Locale;
 
 public class DateTimeUtils {
+    public static void main(String[] args) {
+        System.out.println(getDateTime());
+    }
     private static final SimpleDateFormat simpleDateTimeFormat = new SimpleDateFormat(
             "yyyy-MM-dd HH:mm:ss"
     );
@@ -63,11 +66,12 @@ public class DateTimeUtils {
         return dt;
     }
 
-    public static String getDateTime() {
+    public static LocalDateTime getDateTime() {
         ZoneId zonedId = ZoneId.of("Africa/Lagos");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyMMddHHmmss").withZone(zonedId);
         LocalDateTime today = LocalDateTime.now();
-        return today.format(formatter);
+        return today;
+//        return today.format(formatter);
     }
 
     public static LocalDateTime addMinutesToNowDate(Integer somMinutes)
