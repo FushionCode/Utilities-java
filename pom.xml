@@ -12,7 +12,7 @@
 <!--	Requirements setup	-->
 	<groupId>io.bitbucket.vfddevteam</groupId>
 	<artifactId>TestDeployment</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<packaging>jar</packaging>
 	<name>Test Artifact Deployment</name>
 	<description>Test java Artifact deployment</description>
@@ -38,9 +38,6 @@
 
 <!--	Source control management	-->
 	<scm>
-<!--		<connection>scm:git:git//github.com/fushioncode/utilities.git</connection>-->
-<!--		<developerConnection>scm:git:ssh://github.com:fushioncode/utilities.git</developerConnection>-->
-<!--		<url>https://github.com/fushioncode/utilities/tree/main</url>-->
 		<connection>scm:git:git://bitbucket.org/vfddevteam/testdeployment.git</connection>
 		<developerConnection>scm:git:ssh://bitbucket.org:vfddevteam/testdeployment.git</developerConnection>
 		<url>https://bitbucket.org/vfddevteam/testdeployment/src</url>

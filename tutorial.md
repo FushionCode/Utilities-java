@@ -24,8 +24,19 @@
 4. Configuration in the settings.xml file of .m2 folder
         -> Settings
                 -> Server
-                -> profile
+                -> profiles
 5. Install gpg program and generate Secret key
+        -> gpg --gen-key
+        -> Distribute gpg key to a key-server
+                -> gpg --keyserver keyserver.ubuntu.com --send-keys <gpg-key>
+                        -> Available key server are : 
+                                * keyserver.ubuntu.com 
+                                * keys.openpgp.org 
+                                * pgp.mit.edu
+
+After all requirement is met and set is complete theen we can deploy with the maven deploy command
+        -> using commandline, navigate to the project directory
+        -> mvn clean deploy.
 
 LINKS:
 https://central.sonatype.org/publish/publish-maven/
