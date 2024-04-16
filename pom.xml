@@ -16,32 +16,33 @@
 	<packaging>jar</packaging>
 	<name>Test Artifact Deployment</name>
 	<description>Test java Artifact deployment</description>
-<!--	<url>https://bitbucket.org/vfddevteam/testdeployment</url>-->
+	<url>https://github.com/fushioncode/utilities</url>
 
 <!--	declare license being used/set up in the application	-->
-<!--	<licenses>-->
-<!--		<license>-->
-<!--			<name>The Apache License, Version 2.0</name>-->
-<!--			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>-->
-<!--		</license>-->
-<!--	</licenses>-->
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
 
 <!--	Developer information	-->
-<!--	<developers>-->
-<!--		<developer>-->
-<!--			<name>Matthew Adesina</name>-->
-<!--			<email>matthew.feranmi@outlook.com</email>-->
-<!--			<organization>io.bitbucket.vfddevteam</organization>-->
-<!--			<organizationUrl>https://bitbuckect.org/vfddevteam</organizationUrl>-->
-<!--		</developer>-->
-<!--	</developers>-->
+	<developers>
+		<developer>
+			<name>Matthew Adesina</name>
+			<email>matthew.feranmi@outlook.com</email>
+			<organization>io.github.fushioncode</organization>
+			<organizationUrl>https://github.com/fushioncode</organizationUrl>
+		</developer>
+	</developers>
 
 <!--	Source control management	-->
-<!--	<scm>-->
-<!--		<connection>scm:git:git://bitbucket.org/vfddevteam/testdeployment.git</connection>-->
-<!--		<developerConnection>scm:git:ssh://bitbucket.org:vfddevteam/testdeployment.git</developerConnection>-->
-<!--		<url>https://bitbucket.org/vfddevteam/testdeployment/src</url>-->
-<!--	</scm>-->
+	<scm>
+		  <connection>scm:git:git://github.com/fushioncode/utilities.git</connection>
+		  <developerConnection>scm:git:ssh://github.com/fushioncode/utilities.git</developerConnection>
+		  <url>http://github.com/fushioncode/utilities/tree/main</url>
+	</scm>
+
 
 <!--	Distribution management		-->
 <!--	<distributionManagement>-->
