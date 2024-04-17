@@ -11,10 +11,10 @@
 
 <!--	Requirements setup	-->
 	<groupId>io.github.fushioncode</groupId>
-	<artifactId>TestDeployment</artifactId>
+	<artifactId>utility_service</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
-	<name>Test Artifact Deployment</name>
+	<name>Utility Service Deployment</name>
 	<description>Test java Artifact deployment</description>
 	<url>https://github.com/fushioncode/utilities</url>
 
